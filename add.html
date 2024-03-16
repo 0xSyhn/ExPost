@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>ExPost</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo" onclick="redirectToHome()"><span>Ex</span>Post</h2>
+        <nav class="navigation">
+            <button class="btnLogin-popup" onclick="redirectToHome()"><strong>Return</strong></button>
+         </nav>
+    </header>
+    <div class="container modCon">
+        <div class="formTab formadd">
+            <form action="adddetail.php" method="post">
+                <div class="head1">
+                <span>Shipment</span> Details
+            </div>
+            <div class="forminfo">
+                <div class="formcolumn">
+                <label class="lbl">User ID: </label>
+                <input type="text" name="user_id" id="user_id" placeholder=""  class="ID" maxlength="20" required></input>
+                <label class="lbl">Consignor's Full Name: </label>
+                <input type="text" name="customer_name" id="customer_name" placeholder=""  class="ID" maxlength="20" required></input>
+                <label class="lbl">Consignor's Phone Number: </label>
+                <input type="text" name="customer_ph" id="customer_ph" placeholder=""  class="ID" maxlength="10" required></input>
+                <label class="lbl">Consignor's Email: </label>
+                <input type="text" name="customer_email" id="customer_email" placeholder=""  class="ID" required></input>
+                <label class="lbl">Consignor's Residence: </label>
+                <input type="text" name="customer_address" id="customer_address" placeholder=""  class="ID" maxlength="50" required></input>
+                </div>
+                <div class="formcolumn">
+                    <label class="lbl">Item Weight: </label>
+                    <input type="text" name="weight" id="weight" placeholder=""  class="ID" required></input>
+                    <label class="lbl">Pickup Date: </label>
+                    <input type="date" name="place_date" id="place_date" placeholder=""  class="ID" required></input>
+                    <label class="lbl">Pickup Address: </label>
+                    <input type="text" name="pickup_loc" id="pickup_loc" placeholder=""  class="ID" maxlength="50" required></input>
+                    <label class="lbl">Pickup Location Pin code: </label>
+                    <input type="text" name="pickup_pincode" id="pickup_pincode" placeholder=""  class="ID" required></input>     
+                </div>
+                <div class="formcolumn">
+                    <label class="lbl">Delivery Address: </label>
+                    <input type="text" name="deliver_loc" id="deliver_loc" placeholder=""  class="ID" maxlength="50" required></input>
+                    <label class="lbl">Delivery Location Pincode: </label>
+                    <input type="text" name="deliver_pincode" id="deliver_pincode" placeholder=""  class="ID" required></input>
+                    <label class="lbl">Receiver's Name: </label>
+                    <input type="text" name="deliver_name" id="	deliver_name" placeholder=""  class="ID" maxlength="20" required></input>
+                    <label class="lbl">Receiver's Phone Number: </label>
+                    <input type="text" name="deliver_ph" id="deliver_ph" placeholder=""  class="ID" maxlength="10" required></input>
+                 
+                </div>
+                <input type="submit" value="Submit" class="submit sbmt"></input>
+            </div>
+                  
+            </form>
+        </div>
+    </div>    
+<script src="script.js"></script>
+
+</body>
+</html>

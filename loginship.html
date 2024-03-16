@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>ExPost</title>
+</head>
+<body>
+    <header>
+      <h2 class="logo" onclick="redirectToHome()"><span>Ex</span>Post</h2>
+        <nav class="navigation">
+            <a href="home.html">Home</a>
+            <a href="home.html#about">About</a>
+            <a href="home.html#service">Services</a>
+            <a href="home.html#contactus">Contact Us</a>
+            <a href="login.html">Modify Order</a>
+            <button class="btnLogin-popup" onclick="window.location.href='loginship.html'"><strong>Ship Now</strong></button>
+         </nav>
+    </header>
+    <div class="container">
+      <img src="https://i.postimg.cc/YqXH8V3n/logistic.webp" alt="image">
+        <div class="form-box">
+          <div class="div button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+          </div>
+          <form id="login" class="input-group" action="loginship.php" method="post">
+            <input type="text" class="input-field" placeholder="Username" name="username1" id="username1" required>
+            <input type="password" class="input-field" placeholder="Password" name="password1" id="password1" required>
+            <input type="checkbox" class="check-box"><span class="terms">Remember Password</span>
+            <button class="submit-btn" type="submit">Log In</button>
+          </form>
+      
+          <form id="register" class="input-group" action="register.php" method="post">
+            <input type="text" class="input-field" placeholder="Username" name="username1" id="username1" required>
+            <input type="email" class="input-field" placeholder="Email" name="user_email" id="user_email" required>
+            <input type="text" class="input-field" placeholder="Password" name="password1" id="password1" required>
+            <input type="checkbox" class="check-box"><span class="terms">I agree to the terms & conditions</span>
+            <button class="submit-btn" type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>
